@@ -1,28 +1,45 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header />
+    <div class="body container">
+      <search />
+    </div>
+    <Footer />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import search from "./components/search.vue";
+import Header from "./components/header.vue";
+import Footer from "./components/Footer.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    search,
+    Header,
+    Footer,
+  },
+};
 </script>
 
-<style>
+<style lang=scss >
+body {
+  @import url("https://fonts.googleapis.com/css2?family=Recursive:wght@700&display=swap");
+}
+
+.body {
+  min-height: 69vh;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+.title {
+  font-family: "Recursive", sans-serif;
 }
 </style>
