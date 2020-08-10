@@ -1,23 +1,23 @@
 <template>
   <div id="app">
-    <Header />
+    <MyHeader />
     <div class="body container">
-      <search />
+      <SearchInputAndList />
     </div>
-    <Footer />
+    <MyFooter />
   </div>
 </template>
 
 <script>
-import search from "./components/search.vue";
-import Header from "./components/header.vue";
-import Footer from "./components/Footer.vue";
+import SearchInputAndList from "./components/SearchInputAndList.vue";
+import MyHeader from "./components/MyHeader.vue";
+import MyFooter from "./components/MyFooter.vue";
 export default {
   name: "App",
   components: {
-    search,
-    Header,
-    Footer,
+    SearchInputAndList,
+    MyHeader,
+    MyFooter,
   },
 };
 </script>
